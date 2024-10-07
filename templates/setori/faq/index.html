@@ -1,0 +1,113 @@
+{% extends 'setori/base_layout/base_layout.html' %} 
+{% load static %}
+
+{% block main %} 
+        <!-- header -->
+        <div class="body">
+            <div class="page-header" style="position: relative; margin-bottom: 0; overflow: hidden;">
+                <img src="{% static 'img/header/atasan.jpg' %}" alt="Header Background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+                <div class="container p-relative z-index-1 py-2">
+                    <div class="row mh-200px mh-lg-300px align-items-center py-4">
+                        <div class="col">
+                            <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+                                <h1 class="text-9 text-lg-12 text-color-light font-weight-semibold line-height-1 mb-2">FAQ</h1>
+                            </div>
+                            <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+                                <ul class="breadcrumb d-flex text-3-5 font-weight-semi-bold pb-2 mb-3">
+                                    <li><a href="demo-accounting-1.html" class="text-light text-decoration-none">Beranda</a></li>
+                                    <li class="active text-color-light opacity-7">FAQ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-4 pb-5 pt-lg-5">
+            <div class="row align-items-center py-5">
+                <div class="col-lg-12 mb-5 mb-lg-0 pe-lg-5">
+                    <div class="appear-animation text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+                        <h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-4">FAQ</h2>
+                    </div>							
+                    <div class="appear-animation text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                        <h4>
+                            "FAQ" adalah singkatan dari "Frequently Asked Questions," yang dalam bahasa Indonesia berarti "Pertanyaan yang Sering Diajukan."    
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--dropdown-->
+        <div class="container pt-4 pb-5 pt-lg-5">
+            <div class="accordion accordion-modern-status accordion-modern-status-arrow accordion-modern-status-arrow-dark" id="accordionWhyChooseUs">
+                <div class="card card-default box-shadow-8 border-radius-2 bg-light">
+                    <div class="card-header bg-transparent" id="collapseWhyChooseUsHeadingOne">
+                        <h4 class="card-title m-0">
+                            <a class="accordion-toggle bg-transparent text-3-5 text-color-dark font-weight-semi-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapseWhyChooseUsOne" aria-expanded="false" aria-controls="collapseWhyChooseUsOne">
+                                Apa itu Setori?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseWhyChooseUsOne" class="collapse" aria-labelledby="collapseWhyChooseUsHeadingOne" data-bs-parent="#accordionWhyChooseUs">
+                        <div class="card-body pt-0">
+                            <p class="mb-0">Setori adalah sebuah platform yang dirancang untuk mengumpulkan, menyimpan, dan menyediakan data kesehatan secara terstruktur dan terpercaya. Platform ini bertujuan untuk meningkatkan aksesibilitas, efisiensi, dan transparansi data kesehatan di Indonesia.
+                            </div>
+                    </div>
+                </div>
+                <div class="card card-default box-shadow-8 border-radius-2 bg-light">
+                    <div class="card-header bg-transparent" id="collapseWhyChooseUsHeadingTwo">
+                        <h4 class="card-title m-0">
+                            <a class="accordion-toggle bg-transparent text-3-5 text-color-dark font-weight-semi-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapseWhyChooseUsTwo" aria-expanded="false" aria-controls="collapseWhyChooseUsTwo">
+                                Mengapa Setori penting untuk sektor kesehatan di Indonesia?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseWhyChooseUsTwo" class="collapse" aria-labelledby="collapseWhyChooseUsHeadingTwo" data-bs-parent="#accordionWhyChooseUs">
+                        <div class="card-body pt-0">
+                            <p class="mb-0">Setori penting karena menyediakan solusi untuk masalah data kesehatan yang terpisah-pisah dan kurangnya aksesibilitas informasi. Dengan mengintegrasikan data dari berbagai sumber, Setori membantu meningkatkan layanan kesehatan, mendukung penelitian, dan memfasilitasi pengambilan keputusan berbasis bukti.</div>
+                    </div>
+                </div>
+                <div class="card card-default box-shadow-8 border-radius-2 bg-light">
+                    <div class="card-header bg-transparent" id="collapseWhyChooseUsHeadingThree">
+                        <h4 class="card-title m-0">
+                            <a class="accordion-toggle bg-transparent text-3-5 text-color-dark font-weight-semi-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapseWhyChooseUsThree" aria-expanded="false" aria-controls="collapseWhyChooseUsThree">
+                                Apa manfaat utama dari penggunaan Setori?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseWhyChooseUsThree" class="collapse" aria-labelledby="collapseWhyChooseUsHeadingThree" data-bs-parent="#accordionWhyChooseUs">
+                        <div class="card-body pt-0">
+                            <p class="mb-0">Setori mengoptimalkan proses administrasi dan pelayanan kesehatan pemerintah, mengurangi waktu pencarian dan pengolahan data, serta meningkatkan kepercayaan publik melalui akses data yang transparan. Bagi peneliti dan mahasiswa, Setori memudahkan akses data untuk penelitian berbasis bukti dan memberikan pengalaman praktis dalam pengelolaan dan analisis data. Untuk masyarakat, Setori meningkatkan kesadaran kesehatan melalui informasi yang valid dan terkini, serta menyediakan akses terbuka ke informasi kesehatan yang relevan.</div>
+                    </div>
+                </div>
+                <div class="card card-default box-shadow-8 border-radius-2 bg-light">
+                    <div class="card-header bg-transparent" id="collapseWhyChooseUsHeadingFour">
+                        <h4 class="card-title m-0">
+                            <a class="accordion-toggle bg-transparent text-3-5 text-color-dark font-weight-semi-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapseWhyChooseUsFour" aria-expanded="false" aria-controls="collapseWhyChooseUsThree">
+                                Apa tujuan utama dari Setori?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseWhyChooseUsFour" class="collapse" aria-labelledby="collapseWhyChooseUsHeadingFour" data-bs-parent="#accordionWhyChooseUs">
+                        <div class="card-body pt-0">
+                            <p class="mb-0">Tujuan utama Setori adalah menyediakan platform yang mudah diakses untuk data kesehatan yang terstruktur dan terintegrasi. Setori mendukung pengambilan keputusan berbasis data, memfasilitasi penelitian dan analisis kesehatan, serta meningkatkan kesadaran masyarakat tentang kesehatan melalui informasi yang valid dan terkini.</div>
+                    </div>
+                </div>
+                <div class="card card-default box-shadow-8 border-radius-2 bg-light">
+                    <div class="card-header bg-transparent" id="collapseWhyChooseUsHeadingFour">
+                        <h4 class="card-title m-0">
+                            <a class="accordion-toggle bg-transparent text-3-5 text-color-dark font-weight-semi-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapseWhyChooseUsFour" aria-expanded="false" aria-controls="collapseWhyChooseUsThree">
+                                Bagaimana cara Setori mengumpulkan dan mengelola data kesehatan?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseWhyChooseUsFour" class="collapse" aria-labelledby="collapseWhyChooseUsHeadingFour" data-bs-parent="#accordionWhyChooseUs">
+                        <div class="card-body pt-0">
+                            <p class="mb-0">Setori menggunakan sistem pengelolaan data yang efisien dengan penyimpanan yang aman dan kemampuan untuk mengintegrasikan informasi dari berbagai sumber. Admin yang ditugaskan memasukkan data ke dalam sistem, memastikan bahwa data selalu terbaru dan akurat.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock main %} 

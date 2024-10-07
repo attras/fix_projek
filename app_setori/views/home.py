@@ -5,4 +5,4 @@ from django.views import View
 
 class HomeViews(View):
     def get(self, request):
-        return render(request, 'setori/index.html')
+        return render(request, 'setori/home/index.html')
